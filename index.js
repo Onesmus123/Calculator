@@ -1,14 +1,14 @@
 const display = document.getElementById("display");
 
-function appendToDisplay (input){
+function appendToDisplay (input){//Access value and display.
     display.value += input;
 }
 
-function clearDisplay(){
-    display.value = "";
+function clearDisplay(){ 
+    display.value = "";//Empty string - Clears the display.
 }
 
-function calculate(){
+function calculate(){ //Function to do calculatation.
     try{
         display.value = eval(display.value);
     }
