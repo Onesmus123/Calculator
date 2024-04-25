@@ -9,10 +9,10 @@ function clearDisplay(){
 }
 
 function calculate(){ //Function to do calculatation.
-    try{
+    try{ //Try block 
         display.value = eval(display.value);
     }
-    catch(error){
+    catch(error){//Catch block to catch any errors.
         display.value = "Error"
     }
 }
