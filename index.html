@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Culculator</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="Favicon.jpg">
 </head>
@@ -25,12 +25,15 @@
             <button onclick="appendToDisplay('3')">3</button>
             <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
             <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('00')">00</button>
             <button onclick="appendToDisplay('.')">.</button>
-            <button onclick="calculate()">=</button>
-            <button onclick="clearDisplay()" class="operator-btn">c</button>
+            <button onclick="clearDisplay()" class="operator-btn">AC</button>
+            <button onclick="display.value = display.value.toString().slice(0,-1)" class="operator-btn">DE</button>
+            <button onclick="calculate()" class="equal">=</button>
+            
         </div>
     </div>
 
-    <script src="index.js">s</script>
+    <script src="index.js"></script>
 </body>
 </html>
